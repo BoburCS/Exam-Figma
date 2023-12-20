@@ -1,0 +1,478 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --white-clr: #FFFFFF;
+    --grey-clr: #999;
+    --blue-clr: #4985FF;
+    --black-clr: #323232;
+    --dark-clr: #000;
+}
+
+/* Header */
+header {
+    color: var(--white-clr);
+    width: 100%;
+    height: 900px;
+    background-image: url(./images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header - Navigation Bar */
+header nav {
+    width: 100%;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 40px 20px;
+}
+
+nav ul li a {
+    color: var(--white-clr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid var(--white-clr);
+}
+
+/* Header - Banner */
+header .banner {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 134.09%;
+    margin-bottom: 50px;
+}
+
+.banner button,
+main .about button {
+    color: var(--white-clr);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: var(--blue-clr);
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    /* padding: 0 400px; */
+    height: auto;
+}
+
+/* Main - About Section */
+main .about {
+    padding: 110px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h1 {
+    color: var(--black-clr);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146.28%;
+    margin-bottom: 50px;
+}
+
+.about>p {
+    color: var(--grey-clr);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    margin-bottom: 70px;
+}
+
+/* Main - About Section - Grid Container */
+.about .about-container {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Main - About Section - Grid Container - Cards */
+.about-container .about-container-cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Main - About Section - Grid Container - Cards - Left */
+.about-container-cards .about-container-cards-left {
+    width: 110px;
+    height: 110px;
+    position: relative;
+}
+
+.about-container-cards-left img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main - About Section - Grid Container - Cards - Right */
+.about-container-cards .about-container-cards-right h4 {
+    color: var(--dark-clr);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.about-container-cards .about-container-cards-right p {
+    color: var(--grey-clr);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+}
+
+/* Main - Statistics Section */
+main .statistics {
+    padding: 100px 400px;
+    background-color: #F6F6F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main - Statistics Section - Top */
+.statistics .statistics-top {
+    padding-bottom: 90px;
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Main - Statistics Section - Top - Left */
+.statistics-top .statistics-top-left h1 {
+    color: var(--black-clr);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146.28%;
+    margin-bottom: 40px;
+}
+
+.statistics-top .statistics-top-left p {
+    color: var(--grey-clr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    margin-bottom: 30px;
+}
+
+.statistics-top .statistics-top-left a {
+    color: var(--blue-clr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+/* Main - Statistics Section - Bottom */
+.statistics .statistics-bottom {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+}
+
+/* Main - Statistics Section - Bottom - Cards */
+.statistics-bottom .statistics-bottom-cards b {
+    color: var(--dark-clr);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.28%;
+}
+
+.statistics-bottom .statistics-bottom-cards span {
+    color: var(--grey-clr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    white-space: nowrap;
+}
+
+
+/* Responsiveness for phones */
+@media screen and (max-width: 992px) {
+
+    /* Header */
+    header {
+        height: 450px;
+    }
+
+    /* Header - Navigation Bar */
+    nav ul li {
+        padding: 15px 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Header - Banner */
+    header .banner {
+        height: 400px;
+    }
+
+    .banner span {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .banner button {
+        font-size: 14px;
+    }
+
+    /* Main - About Section */
+    main .about {
+        padding: 50px 50px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about>p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    /* Main - About Section - Grid Container */
+    .about .about-container {
+        margin-bottom: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* Main - About Section - Grid Container - Cards - Right */
+    .about-container-cards .about-container-cards-right h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .about-container-cards .about-container-cards-right p {
+        font-size: 10px;
+    }
+
+    /* Main - Statistics Section */
+    main .statistics {
+        padding: 50px 50px;
+    }
+
+    /* Main - Statistics Section - Top */
+    .statistics .statistics-top {
+        padding-bottom: 30px;
+        gap: 10px;
+    }
+
+    /* Main - Statistics Section - Top - Left */
+    .statistics-top .statistics-top-left h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .statistics-top .statistics-top-left p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .statistics-top .statistics-top-left a {
+        font-size: 14px;
+    }
+
+    /* Main - Statistics Section - Top - Right */
+    .statistics-top .statistics-top-right img {
+        width: 350px;
+    }
+
+    /* Main - Statistics Section - Bottom */
+    .statistics .statistics-bottom {
+        padding-top: 25px;
+        gap: 20px;
+    }
+
+    /* Main - Statistics Section - Bottom - Cards */
+    .statistics-bottom .statistics-bottom-cards b {
+        font-size: 24px;
+    }
+
+    .statistics-bottom .statistics-bottom-cards span {
+        font-size: 14px;
+    }
+}
+
+/* Responsiveness for tablets */
+@media screen and (min-width: 993px) and (max-width: 1500px) {
+
+    /* Header */
+    header {
+        height: 600px;
+    }
+
+    /* Header - Navigation Bar */
+    nav ul li {
+        padding: 25px 15px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* Header - Banner */
+    header .banner {
+        height: 450px;
+    }
+
+    .banner span {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .banner button {
+        font-size: 16px;
+    }
+
+    /* Main - About Section */
+    main .about {
+        padding: 75px 100px;
+    }
+
+    .about h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .about>p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    /* Main - About Section - Grid Container */
+    .about .about-container {
+        margin-bottom: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    /* Main - About Section - Grid Container - Cards - Right */
+    .about-container-cards .about-container-cards-right h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .about-container-cards .about-container-cards-right p {
+        font-size: 14px;
+    }
+
+    /* Main - Statistics Section */
+    main .statistics {
+        padding: 75px 100px;
+    }
+
+    /* Main - Statistics Section - Top */
+    .statistics .statistics-top {
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+
+    /* Main - Statistics Section - Top - Left */
+    .statistics-top .statistics-top-left h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .statistics-top .statistics-top-left p {
+        margin-bottom: 20px;
+    }
+
+    /* Main - Statistics Section - Top - Right */
+    .statistics-top .statistics-top-right img {
+        width: 450px;
+    }
+
+    /* Main - Statistics Section - Bottom */
+    .statistics .statistics-bottom {
+        padding-top: 40px;
+        gap: 75px;
+    }
+
+    /* Main - Statistics Section - Bottom - Cards */
+    .statistics-bottom .statistics-bottom-cards b {
+        font-size: 28px;
+    }
+}
