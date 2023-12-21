@@ -97,7 +97,8 @@ header .banner {
 /* Global button for whole page */
 .banner button,
 main .about button,
-main .projects .projects-content .projects-content-top button {
+main .projects .projects-content .projects-content-top button,
+main .works button {
     color: var(--white-clr);
     text-align: center;
     font-size: 16px;
@@ -156,7 +157,7 @@ main .about {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 30px;
 }
 
 /* Main - About Section - Grid Container - Cards */
@@ -370,6 +371,286 @@ main .projects {
 
 
 
+/* Main - Works Section */
+main .works {
+    padding: 100px 400px;
+    background-color: #F6F6F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.works h1 {
+    color: var(--dark-clr);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146.28%;
+}
+
+.works p {
+    color: var(--grey-clr);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    margin-bottom: 20px;
+}
+
+/* Main - Works Section - Container */
+.works .works-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+
+/* Main - Video Section */
+main .video {
+    width: 100%;
+    height: 1020px;
+    position: relative;
+}
+
+/* Main - Video Section - Image Background */
+.video .box-image {
+    width: 100%;
+    height: 570px;
+    background-image: url(./images/video-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Main - Video Section - White Background */
+.video .box-white {
+    width: 100%;
+    height: 450px;
+    background-color: var(--white-clr);
+}
+
+/* Main - Video Section - Content */
+.video .video-content {
+    padding: 100px 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-content h1 {
+    color: var(--white-clr);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 146.28%;
+    margin-bottom: 30px;
+}
+
+.video-content p {
+    color: var(--white-clr);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    margin-bottom: 70px;
+}
+
+/* Main - Video Section - Content - Video Container */
+.video-content .video-container {
+    width: 970px;
+    height: 430px;
+    border-radius: 10px;
+    background-image: url(./images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.video-container>button {
+    color: var(--white-clr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 158.47%;
+    padding: 20px 40px;
+    border: 1px solid var(--white-clr);
+    border-radius: 200px;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.video-content hr {
+    margin: 85px 0;
+    width: 1110px;
+    height: 1px;
+    background: #E0E0E0;
+    opacity: 0.5;
+}
+
+/* Main - Video Section - Content - Form */
+.video-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-content form h3 {
+    color: var(--dark-clr);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.video-content form p {
+    color: var(--grey-clr);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    margin-bottom: 30px;
+}
+
+/* Main - Video Section - Content - Form - Write Email */
+.video-content form .write-email {
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.write-email>input {
+    padding: 15px 30px;
+    width: 300px;
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    outline: none;
+    background: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+}
+
+.write-email input::placeholder {
+    color: var(--grey-clr);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+}
+
+.write-email>button {
+    color: var(--white-clr);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 190px;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    outline: none;
+    background: var(--blue-clr);
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+    cursor: pointer;
+}
+
+.video-content form span {
+    color: var(--grey-clr);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+}
+
+
+
+/* Footer */
+footer {
+    padding: 100px 400px;
+    width: 100%;
+    height: auto;
+    background-color: #F6F6F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer - Top */
+footer .footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Footer - Top - Cards */
+.footer-top .footer-top-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top-cards h2 {
+    color: var(--dark-clr);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.footer-top-cards a {
+    color: var(--grey-clr);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer>hr {
+    margin: 70px 0 30px;
+    width: 100%;
+    height: 1px;
+    background-color: #E0E0E0;
+    opacity: 0.5;
+}
+
+/* Footer - Bottom */
+footer .footer-bottom span {
+    color: var(--grey-clr);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.47%;
+}
+
+
+
 /* Responsiveness for phones */
 @media screen and (max-width: 992px) {
 
@@ -483,6 +764,197 @@ main .projects {
     .statistics-bottom .statistics-bottom-cards span {
         font-size: 14px;
     }
+
+    /* Main - Projects Section */
+    main .projects {
+        height: 550px;
+    }
+
+    /* Main - Projects Section - Purple Background */
+    .projects .purple-background {
+        height: 300px;
+    }
+
+    /* Main - Projects Section - White Background */
+    .projects .white-background {
+        height: 250px;
+    }
+
+    /* Main - Projects Section - Content */
+    .projects .projects-content {
+        padding: 50px 50px;
+    }
+
+    /* Main - Projects Section - Content - Top */
+    .projects-content .projects-content-top {
+        margin-bottom: 10px;
+    }
+
+    .projects-content-top h1 {
+        font-size: 20px;
+    }
+
+    /* Main - Projects Section - Content - Bottom */
+    .projects-content .projects-content-bottom {
+        gap: 10px;
+    }
+
+    /* Main - Projects Section - Content - Bottom - Cards */
+    .projects-content-bottom .projects-content-bottom-cards {
+        gap: 10px;
+    }
+
+    .projects-content-bottom-cards img {
+        width: 250px;
+    }
+
+    .projects-content-bottom-cards h4 {
+        font-size: 14px;
+    }
+
+    .projects-content-bottom-cards h4 span {
+        font-size: 16px;
+    }
+
+    .projects-content-bottom-cards p {
+        font-size: 12px;
+    }
+
+    .projects-content-bottom-cards a {
+        font-size: 12px;
+    }
+
+    /* Main - Works Section */
+    main .works {
+        padding: 50px 50px;
+        gap: 20px;
+    }
+
+    .works h1 {
+        font-size: 20px;
+    }
+
+    .works p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Main - Works Section - Container */
+    .works .works-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .works-container img {
+        width: 200px;
+    }
+
+    /* Main - Video Section */
+    main .video {
+        height: 650px;
+    }
+
+    /* Main - Video Section - Image Background */
+    .video .box-image {
+        height: 350px;
+    }
+
+    /* Main - Video Section - White Background */
+    .video .box-white {
+        height: 300px;
+    }
+
+    /* Main - Video Section - Content */
+    .video .video-content {
+        padding: 50px 50px;
+    }
+
+    .video-content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .video-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* Main - Video Section - Content - Video Container */
+    .video-content .video-container {
+        width: 550px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .video-container>button {
+        font-size: 14px;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .video-container>button img {
+        width: 30px;
+    }
+
+    .video-content hr {
+        margin: 25px 0;
+        width: 500px;
+    }
+
+    /* Main - Video Section - Content - Form */
+    .video-content form h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .video-content form p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    /* Main - Video Section - Content - Form - Write Email */
+    .video-content form .write-email {
+        margin-bottom: 15px;
+    }
+
+    .write-email>input {
+        padding: 10px 15px;
+        width: 250px;
+    }
+
+    .write-email input::placeholder {
+        font-size: 13px;
+    }
+
+    .write-email>button {
+        font-size: 14px;
+        width: 140px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 50px;
+    }
+
+    /* Footer - Top */
+    footer .footer-top {
+        gap: 10px;
+    }
+
+    /* Footer - Top - Cards */
+    .footer-top .footer-top-cards {
+        gap: 10px;
+    }
+
+    .footer-top-cards h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    footer>hr {
+        margin: 20px 0 10px;
+    }
+
 }
 
 
@@ -525,7 +997,7 @@ main .projects {
 
     /* Main - About Section */
     main .about {
-        padding: 75px 100px;
+        padding: 70px 100px;
     }
 
     .about h1 {
@@ -557,7 +1029,7 @@ main .projects {
 
     /* Main - Statistics Section */
     main .statistics {
-        padding: 75px 100px;
+        padding: 70px 100px;
     }
 
     /* Main - Statistics Section - Top */
@@ -590,5 +1062,188 @@ main .projects {
     /* Main - Statistics Section - Bottom - Cards */
     .statistics-bottom .statistics-bottom-cards b {
         font-size: 28px;
+    }
+
+    /* Main - Projects Section */
+    main .projects {
+        height: 750px;
+    }
+
+    /* Main - Projects Section - Purple Background */
+    .projects .purple-background {
+        height: 400px;
+    }
+
+    /* Main - Projects Section - White Background */
+    .projects .white-background {
+        height: 350px;
+    }
+
+    /* Main - Projects Section - Content */
+    .projects .projects-content {
+        padding: 70px 100px;
+    }
+
+    /* Main - Projects Section - Content - Top */
+    .projects-content .projects-content-top {
+        margin-bottom: 30px;
+    }
+
+    .projects-content-top h1 {
+        font-size: 28px;
+    }
+
+    /* Main - Projects Section - Content - Bottom */
+    .projects-content .projects-content-bottom {
+        gap: 20px;
+    }
+
+    /* Main - Projects Section - Content - Bottom - Cards */
+    .projects-content-bottom .projects-content-bottom-cards {
+        gap: 20px;
+    }
+
+    .projects-content-bottom-cards img {
+        width: 370px;
+    }
+
+    .projects-content-bottom-cards h4 {
+        font-size: 16px;
+    }
+
+    .projects-content-bottom-cards h4 span {
+        font-size: 18px;
+    }
+
+    .projects-content-bottom-cards p {
+        font-size: 14px;
+    }
+
+    .projects-content-bottom-cards a {
+        font-size: 14px;
+    }
+
+    /* Main - Works Section */
+    main .works {
+        padding: 70px 100px;
+        gap: 35px;
+    }
+
+    .works h1 {
+        font-size: 28px;
+    }
+
+    .works p {
+        margin-bottom: 15px;
+    }
+
+    /* Main - Works Section - Container */
+    .works .works-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .works-container img {
+        width: 270px;
+    }
+
+    /* Main - Video Section */
+    main .video {
+        height: 1000px;
+    }
+
+    /* Main - Video Section - Image Background */
+    .video .box-image {
+        height: 450px;
+    }
+
+    /* Main - Video Section - White Background */
+    .video .box-white {
+        height: 400px;
+    }
+
+    /* Main - Video Section - Content */
+    .video .video-content {
+        padding: 70px 100px;
+    }
+
+    .video-content h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .video-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    /* Main - Video Section - Content - Video Container */
+    .video-content .video-container {
+        width: 800px;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .video-container>button {
+        font-size: 16px;
+        padding: 15px 30px;
+        gap: 15px;
+    }
+
+    .video-container>button img {
+        width: 50px;
+    }
+
+    .video-content hr {
+        margin: 50px 0;
+        width: 900px;
+    }
+
+    /* Main - Video Section - Content - Form */
+    .video-content form h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .video-content form p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    /* Main - Video Section - Content - Form - Write Email */
+    .video-content form .write-email {
+        margin-bottom: 20px;
+    }
+
+    .write-email>input {
+        padding: 14px 20px;
+        width: 300px;
+    }
+
+    .write-email input::placeholder {
+        font-size: 13px;
+    }
+
+    .write-email>button {
+        font-size: 16px;
+        width: 190px;
+    }
+
+    footer {
+        padding: 70px 100px;
+    }
+
+    /* Footer - Top */
+    footer .footer-top {
+        gap: 20px;
+    }
+
+    /* Footer - Top - Cards */
+    .footer-top .footer-top-cards {
+        gap: 20px;
+    }
+
+    footer>hr {
+        margin: 40px 0 20px;
     }
 }
